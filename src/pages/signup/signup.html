@@ -1,0 +1,29 @@
+<ion-content padding id="signup">
+  <img src="../../assets/imgs/logo.png" class="logo" />
+  <ion-list id="signup-list">
+
+    <ion-item>
+      <ion-label fixed>Name</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>Email</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>Username</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+
+    <button ion-button block color="primary" (click)="signup()">Signup</button>
+
+  </ion-list>
+  <button ion-button block color="lightprimary" (click)="login()">Login</button>
+</ion-content>

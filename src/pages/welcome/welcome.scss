@@ -1,0 +1,19 @@
+page-welcome {
+  #welcome {
+    background: color($colors, main);
+
+    h1 {
+      font-size: 52px;
+      margin-top: 50px;
+      font-family: Trebuchet MS, sans-serif;
+    }
+
+    .marginTop {
+      margin-top: 150px;
+    }
+
+    .logo {
+      height: 70px;
+    }
+  }
+}
