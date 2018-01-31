@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { TabsPage } from '../tabs/tabs';
 
-import { Login } from '../login/login';
-import { Newprofil } from '../newprofil/newprofil';
 /**
  * Generated class for the Signup page.
  *
@@ -11,24 +10,19 @@ import { Newprofil } from '../newprofil/newprofil';
  */
 @IonicPage()
 @Component({
-  selector: 'page-signup',
-  templateUrl: 'signup.html',
+  selector: 'page-newprofil',
+  templateUrl: 'newprofil.html',
 })
-export class Signup {
+export class Newprofil {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad Signup');
+    console.log('ionViewDidLoad Newprofil');
   }
 
-  login() {
-    this.navCtrl.push(Login);
+  skip() {
+    this.navCtrl.push(TabsPage);
   }
-
-  signup() {
-    this.navCtrl.setRoot(Newprofil);
-  }
-
 }

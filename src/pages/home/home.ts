@@ -11,11 +11,4 @@ export class HomePage {
   constructor(public navCtrl: NavController, public app: App) {
 
   }
-
-  logout(){
-    //Api Token Logout 
-    const root = this.app.getRootNav();
-    root.popToRoot();
-  }
-
 }
