@@ -1,14 +1,31 @@
 <ion-header>
   <ion-navbar>
+    <img ion-right src="assets/imgs/logo.png" class="navbarLogo" />
     <ion-buttons start>
       <button ion-button menuToggle>
         <ion-icon name="menu"></ion-icon>
       </button>
     </ion-buttons>
-    <ion-title>Special</ion-title>
   </ion-navbar>
 </ion-header>
  
-<ion-content padding>
-  This page has no tabs!
+<ion-content padding id="profil">
+  <ion-list id="profil-list">
+
+    <ion-item>
+      <ion-label fixed>Name</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>Surname</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>Email</ion-label>
+      <ion-input type="email"></ion-input>
+    </ion-item>
+
+  </ion-list>
 </ion-content>

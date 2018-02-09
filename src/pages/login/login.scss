@@ -1,14 +1,49 @@
 page-login {
   #login {
     background: color($colors, main);
-  }
 
-  #login-list {
-    background: white;
-  }
+    .marginTop {
+      margin-top: 150px;
+    }
 
-  .logo {
-    height: 70px;
-    margin-bottom: 70px;
+    section {
+      padding-top: 20px;
+      background: color($colors, base);
+      border-radius: 50px;
+      height: 100%;
+      margin: 10px;
+      position: relative;
+    }
+
+    section img {
+      width: 80%;
+      height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30%;
+    }
+
+    section ion-list {
+      margin-bottom: 10%;
+    }
+
+    section ion-item {
+      width: 80%;
+      height: 15%;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 10px;
+      margin-bottom: 5px;
+    }
+
+    section button {
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      height: 7%;
+      margin-bottom: 10px;
+      border-radius: 10px;
+    }
   }
 }

@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\pages",
+    "\\src\\pages\\about",
+    "\\src\\pages\\contact",
+    "\\src\\pages\\login",
+    "\\src\\pages\\register",
+    "\\src\\theme"
+  ],
+  "SelectedNode": "\\src\\pages\\register\\register.ts",
+  "PreviewInSolutionExplorer": false
+}

@@ -23,6 +23,6 @@ export class Newprofil {
   }
 
   skip() {
-    this.navCtrl.push(TabsPage);
+    this.navCtrl.setRoot('MenuPage');
   }
 }

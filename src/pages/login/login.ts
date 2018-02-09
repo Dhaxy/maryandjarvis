@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Signup } from '../signup/signup';
+import {Welcome } from '../welcome/welcome';
 
 @IonicPage()
 @Component({
@@ -18,8 +18,9 @@ export class Login {
 
   login(){
     this.navCtrl.setRoot('MenuPage');
-    }
-  signup() {
-    this.navCtrl.push(Signup, {}, { animate: false });
+  }
+
+  back() {
+    this.navCtrl.push(Welcome, {}, { animate: false });
   }
 }

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { Login } from '../login/login';
-import { Signup } from '../signup/signup';
+import { Register } from '../register/register';
 /**
  * Generated class for the Welcome page.
  *
@@ -27,8 +27,8 @@ export class Welcome {
    this.navCtrl.push(Login);
   }
 
-  signup(){
-   this.navCtrl.push(Signup, {}, {animate:false});
+  register(){
+   this.navCtrl.push(Register, {}, {animate:false});
   }
 
 }
