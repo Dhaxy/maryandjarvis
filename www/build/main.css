@@ -30545,6 +30545,22 @@ page-about #about {
   padding: 10px 10px;
 }
 
+page-activity #activity {
+  background: #E6DED1;
+}
+
+.navbarLogo {
+  height: 40px;
+  float: left;
+  margin-left: 10px;
+}
+
+.menu {
+  float: right;
+  font-size: 30px;
+  padding: 10px 10px;
+}
+
 page-contact #contact {
   background: #E6DED1;
 }
@@ -30621,6 +30637,22 @@ page-login #login section button {
 
 page-menu #menu {
   background: #E6DED1;
+}
+
+page-miracle #miracle {
+  background: #E6DED1;
+}
+
+.navbarLogo {
+  height: 40px;
+  float: left;
+  margin-left: 10px;
+}
+
+.menu {
+  float: right;
+  font-size: 30px;
+  padding: 10px 10px;
 }
 
 page-newprofil #newprofil {

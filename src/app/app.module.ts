@@ -11,11 +11,14 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { Newprofil } from '../pages/newprofil/newprofil';
+import { Activity } from '../pages/activity/activity';
+import { Miracle } from '../pages/miracle/miracle';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-@NgModule({
+@
+NgModule({
   declarations: [
     MyApp,
     Welcome,
@@ -25,7 +28,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     HomePage,
     TabsPage,
-    Newprofil
+    Newprofil,
+    Miracle,
+    Activity
   ],
   imports: [
     BrowserModule,
@@ -41,7 +46,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     HomePage,
     TabsPage,
-    Newprofil
+    Newprofil,
+    Miracle,
+    Activity
   ],
   providers: [
     StatusBar,

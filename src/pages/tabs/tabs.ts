@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { NavParams } from 'ionic-angular';
 
-import { AboutPage } from '../about/about';
-import { ContactPage } from '../contact/contact';
+import { Activity } from '../activity/activity';
+import { Miracle } from '../miracle/miracle';
 import { HomePage } from '../home/home';
 
 @Component({
@@ -15,9 +15,9 @@ import { HomePage } from '../home/home';
 
 export class TabsPage {
 
-  tab1Root = HomePage;
-  tab2Root = AboutPage;
-  tab3Root = ContactPage;
+  tab1Root = Activity;
+  tab2Root = HomePage;
+  tab3Root = Miracle;
   myIndex: number;
   constructor(navParams: NavParams) {
     // Set the active tab based on the passed index from menu.ts
