@@ -30635,17 +30635,52 @@ page-profile #profil {
   background: #E6DED1;
 }
 
-page-signup #signup {
+page-register #register {
   background: #E6DED1;
 }
 
-page-signup #signup-list {
-  background: white;
+page-register #register .marginTop {
+  margin-top: 150px;
 }
 
-page-signup .logo {
-  height: 70px;
-  margin-bottom: 70px;
+page-register #register section {
+  padding-top: 20px;
+  background: #11314F;
+  border-radius: 50px;
+  height: 100%;
+  margin: 10px;
+  position: relative;
+}
+
+page-register #register section img {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30%;
+}
+
+page-register #register section ion-list {
+  margin-bottom: 10%;
+}
+
+page-register #register section ion-item {
+  width: 80%;
+  height: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+page-register #register section button {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 7%;
+  margin-bottom: 10px;
+  border-radius: 10px;
 }
 
 page-welcome #welcome {
