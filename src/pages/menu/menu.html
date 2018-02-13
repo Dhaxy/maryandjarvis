@@ -4,7 +4,7 @@
       <ion-title>Menu</ion-title>
     </ion-toolbar>
   </ion-header>
- 
+
   <ion-content id="menu">
     <ion-list>
       <button id="menu" ion-item menuClose *ngFor="let p of pages" (click)="openPage(p)">
@@ -14,6 +14,7 @@
     </ion-list>
   </ion-content>
 </ion-menu>
- 
+
+
 <!-- main navigation -->
 <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
