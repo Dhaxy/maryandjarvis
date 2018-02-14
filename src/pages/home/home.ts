@@ -11,4 +11,10 @@ export class HomePage {
   constructor(public navCtrl: NavController, public app: App) {
 
   }
+
+  public hide: boolean = false;
+
+  hideCard() {
+    this.hide = !this.hide;
+  }
 }
