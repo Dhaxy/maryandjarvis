@@ -21886,17 +21886,6 @@ ion-navbar.toolbar {
   background-color: #11314F;
 }
 
-page-about #about {
-  background: #E6DED1;
-}
-
-.menu {
-  display: initial;
-  float: right;
-  font-size: 30px;
-  padding: 10px 10px;
-}
-
 page-activity #activity {
   background: #E6DED1;
 }
@@ -21913,14 +21902,9 @@ page-activity #activity {
   padding: 10px 10px;
 }
 
-page-contact #contact {
-  background: #E6DED1;
-}
-
-.menu {
-  float: right;
-  font-size: 30px;
-  padding: 10px 10px;
+.card-background-page ion-card {
+  position: relative;
+  margin-top: 10px;
 }
 
 page-home #home {
@@ -21937,6 +21921,13 @@ page-home #home {
   float: right;
   font-size: 30px;
   padding: 10px 10px;
+}
+
+.dashboard {
+  padding: 30px;
+  background: #aea699;
+  border-spacing: 15px;
+  border: solid #2A2C43;
 }
 
 page-login #login {
