@@ -17,8 +17,25 @@ page-home {
 }
 
 .dashboard {
+  position: center;
+  background-position: center;
   padding: 30px;
   background: #aea699;
   border-spacing: 15px;
   border: solid #2A2C43;
+  border-radius: 15px;
+  margin-top: 50%;
+  height: 60%;
+  width: 100%;
+}
+
+.buttonDashboard {
+  position: relative;
+  top: 1px;
+  left: 15px;
+  width: auto;
+  font-size: small;
+  margin:auto;
+  margin-top:5px;
+  margin-bottom: 5px;
 }

@@ -10,13 +10,11 @@
 </ion-header>
 
 <ion-content padding id="home">
-  <ion-buttons>
-    <button ion-button (click)="hideCard()">
-    </button>
-  </ion-buttons>
   <ion-content padding class="dashboard">
-      <ion-card *ngIf="hide">
-        This card will be hidden if I click once on the button.
-      </ion-card>
+    <ion-buttons>
+      <button ion-button (click)="hideCard()" id="buttonDash1" class="buttonDashboard">First tab</button>
+      <button ion-button (click)="hideCard()" id="buttonDash2" class="buttonDashboard">Second tab</button>
+      <button ion-button (click)="hideCard()" id="buttonDash3" class="buttonDashboard">Third tab</button>
+    </ion-buttons>
   </ion-content>
 </ion-content>
