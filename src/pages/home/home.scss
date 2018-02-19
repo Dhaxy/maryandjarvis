@@ -19,14 +19,22 @@ page-home {
 .dashboard {
   position: center;
   background-position: center;
-  padding: 30px;
+  padding: 10px;
   background: #aea699;
-  border-spacing: 15px;
   border: solid #2A2C43;
   border-radius: 15px;
   margin-top: 50%;
   height: 60%;
   width: 100%;
+}
+
+.dashboardTab {
+  position: center;
+  background-position: center;
+  background: #aea699;
+  border: solid #2A2C43;
+  border-radius: 15px;
+  height: 186px;
 }
 
 .buttonDashboard {
