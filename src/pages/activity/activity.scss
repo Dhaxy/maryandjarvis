@@ -21,7 +21,12 @@ page-activity {
   ion-card {
     position: relative;
     margin-top: 10px;
+    background: color($colors, base);
   }
 
+  ion-card img {
+    width: initial;
+    height: initial;
+  }
 }
 

@@ -31,7 +31,7 @@ var Activity = (function () {
     }
     Activity = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-activity',template:/*ion-inline-start:"C:\Users\Cassandre\Documents\maryandjarvis\src\pages\activity\activity.html"*/`<ion-header>\n\n  <ion-navbar>\n\n    <img ion-right src="../../assets/imgs/M_and_J_logo_2_cream.png" class="navbarLogo" />\n\n    <ion-buttons start>\n\n      <button ion-button menuToggle>\n\n        <ion-icon name="menu"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding id="activity" class="card-background-page">\n\n  <ion-card>\n\n    <img src="../../assets/icon/Dry_Cleaning.png"/>\n\n  </ion-card>\n\n\n\n  <ion-card>\n\n    <img src="../../assets/icon/Grocery_Shopping.png"/>\n\n  </ion-card>\n\n\n\n  <ion-card>\n\n    <img src="../../assets/icon/Home_Cleaning.png"/>\n\n  </ion-card>\n\n\n\n  <ion-card>\n\n    <img src="../../assets/icon/Laundry_and_Ironing.png"/>\n\n  </ion-card>\n\n\n\n  <ion-card>\n\n    <img src="../../assets/icon/Mail_Management.png"/>\n\n  </ion-card>\n\n\n\n  <ion-card>\n\n    <img src="../../assets/icon/Recycling.png"/>\n\n  </ion-card>\n\n\n\n  <ion-card>\n\n    <img src="../../assets/icon/Shoe.png"/>\n\n  </ion-card>\n\n</ion-content>\n\n`/*ion-inline-end:"C:\Users\Cassandre\Documents\maryandjarvis\src\pages\activity\activity.html"*/,
+            selector: 'page-activity',template:/*ion-inline-start:"C:\Users\Cassandre\Documents\maryandjarvis\src\pages\activity\activity.html"*/`<ion-header>\n\n  <ion-navbar>\n\n    <img ion-right src="../../assets/imgs/M_and_J_logo_2_cream.png" class="navbarLogo" />\n\n    <ion-buttons start>\n\n      <button ion-button menuToggle>\n\n        <ion-icon name="menu"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding id="activity" class="card-background-page">\n\n  <ion-card>\n\n    <img src="../../assets/icon/Dry_Cleaning.jpg"/>\n\n  </ion-card>\n\n\n\n  <ion-card>\n\n    <img src="../../assets/icon/Grocery_Shopping.jpg"/>\n\n  </ion-card>\n\n\n\n  <ion-card>\n\n    <img src="../../assets/icon/Home_Cleaning.jpg"/>\n\n  </ion-card>\n\n\n\n  <ion-card>\n\n    <img src="../../assets/icon/Laundry_Ironing.jpg"/>\n\n  </ion-card>\n\n\n\n  <ion-card>\n\n    <img src="../../assets/icon/Mail_Management.jpg"/>\n\n  </ion-card>\n\n\n\n  <ion-card>\n\n    <img src="../../assets/icon/Recycling_Management.jpg"/>\n\n  </ion-card>\n\n\n\n  <ion-card>\n\n    <img src="../../assets/icon/Shoes_Care.jpg"/>\n\n  </ion-card>\n\n</ion-content>\n\n`/*ion-inline-end:"C:\Users\Cassandre\Documents\maryandjarvis\src\pages\activity\activity.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
     ], Activity);
@@ -78,7 +78,7 @@ var Login = (function () {
     };
     Login = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"C:\Users\Cassandre\Documents\maryandjarvis\src\pages\login\login.html"*/`<ion-content padding id="login">\n\n\n\n  <section>\n\n    <img src="../../assets/imgs/M_and_J_logo_2_cream.png" class="logo" />\n\n\n\n    <ion-list id="login-list">\n\n\n\n      <ion-item>\n\n        <ion-label fixed>Username</ion-label>\n\n        <ion-input type="text" value=""></ion-input>\n\n      </ion-item>\n\n\n\n      <ion-item>\n\n        <ion-label fixed>Password</ion-label>\n\n        <ion-input type="password" value=""></ion-input>\n\n      </ion-item>\n\n    </ion-list>\n\n\n\n    <button ion-button block color="main" (click)="login()">Login</button>\n\n    <button ion-button block color="main" (click)="back()">Back</button>\n\n  </section>\n\n</ion-content>\n\n\n\n\n\n`/*ion-inline-end:"C:\Users\Cassandre\Documents\maryandjarvis\src\pages\login\login.html"*/,
+            selector: 'page-login',template:/*ion-inline-start:"C:\Users\Cassandre\Documents\maryandjarvis\src\pages\login\login.html"*/`<ion-content padding id="login">\n\n\n\n  <section>\n\n    <img src="../../assets/imgs/M_and_J_logo_2_cream.png"/>\n\n\n\n    <ion-list id="login-list">\n\n\n\n      <ion-item>\n\n        <ion-label fixed>Username</ion-label>\n\n        <ion-input type="text" value=""></ion-input>\n\n      </ion-item>\n\n\n\n      <ion-item>\n\n        <ion-label fixed>Password</ion-label>\n\n        <ion-input type="password" value=""></ion-input>\n\n      </ion-item>\n\n    </ion-list>\n\n\n\n    <button ion-button block color="main" (click)="login()">Login</button>\n\n    <button ion-button block color="main" (click)="back()">Back</button>\n\n  </section>\n\n</ion-content>\n\n\n\n\n\n`/*ion-inline-end:"C:\Users\Cassandre\Documents\maryandjarvis\src\pages\login\login.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
     ], Login);
@@ -207,27 +207,27 @@ var map = {
 		7
 	],
 	"../pages/menu/menu.module": [
-		280,
+		281,
 		0
 	],
 	"../pages/miracle/miracle.module": [
-		281,
+		280,
 		6
 	],
 	"../pages/newprofil/newprofil.module": [
-		282,
+		285,
 		5
 	],
 	"../pages/parameters/parameters.module": [
-		283,
+		282,
 		2
 	],
 	"../pages/profile/profile.module": [
-		284,
+		283,
 		1
 	],
 	"../pages/register/register.module": [
-		285,
+		284,
 		4
 	],
 	"../pages/welcome/welcome.module": [
@@ -459,12 +459,12 @@ var AppModule = (function () {
                     links: [
                         { loadChildren: '../pages/activity/activity.module#ActivityModule', name: 'Activity', segment: 'activity', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginModule', name: 'Login', segment: 'login', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/menu/menu.module#MenuPageModule', name: 'MenuPage', segment: 'menu', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/miracle/miracle.module#MiracleModule', name: 'Miracle', segment: 'miracle', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/newprofil/newprofil.module#SignupModule', name: 'Newprofil', segment: 'newprofil', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/menu/menu.module#MenuPageModule', name: 'MenuPage', segment: 'menu', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/parameters/parameters.module#ParametersPageModule', name: 'ParametersPage', segment: 'parameters', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/profile/profile.module#ProfilePageModule', name: 'ProfilePage', segment: 'profile', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/register/register.module#RegisterModule', name: 'Register', segment: 'register', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/newprofil/newprofil.module#SignupModule', name: 'Newprofil', segment: 'newprofil', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/welcome/welcome.module#WelcomeModule', name: 'Welcome', segment: 'welcome', priority: 'low', defaultHistory: [] }
                     ]
                 })
