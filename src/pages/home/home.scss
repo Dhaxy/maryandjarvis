@@ -23,7 +23,7 @@ page-home {
   background: #aea699;
   border: solid #2A2C43;
   border-radius: 15px;
-  margin-top: 40%;
+  margin-top: 20%;
   height: 290px;
   width: 380px;
 }
@@ -39,9 +39,39 @@ page-home {
 
 .dashboardText {
   font-family: Windsong, cursive;
+  font-size: 25px;
+}
+
+.dashboardTextTop {
+  font-family: Windsong, cursive;
   font-size: 35px;
   padding-top: 10px;
-  text-decoration-color: #2A2C43;
+}
+
+.dashboardTextNextVisit {
+  font-family: Windsong, cursive;
+  margin-top: 20px;
+  margin-left: 5px;
+  font-size: 25px;
+  display: inline-block;
+}
+
+.dashboardTextCalendar {
+  font-size: 15px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.dashboardHoursSaved {
+  position: absolute;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-left: 280px;
+  margin-top: 90px;
+  border: solid #2A2C43;
+  background: #aea699;
+  display: inline-block;
 }
 
 .buttonDashboard {

@@ -15,6 +15,6 @@ export class HomePage {
   public hide: boolean[];
 
   hideCard() {
-    ;
+
   }
 }

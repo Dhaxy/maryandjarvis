@@ -10,15 +10,20 @@
 </ion-header>
 
 <ion-content padding id="home">
-  <div text-center class="dashboardText">Dear Amaury</div>
+  <div text-center class="dashboardTextTop">Dear Amaury</div>
+  <div>
+    <div text-left class="dashboardTextNextVisit">Next visit is :</div>
+    <ion-content padding class="dashboardHoursSaved">
+      <div text-center class="dashboardText">42</div>
+    </ion-content>
+    <div text-left class="dashboardTextCalendar">25th March 2049</div>
+    <div text-left class="dashboardTextCalendar">At 4 p.m</div>
+  </div>
   <ion-content padding class="dashboard">
     <ion-buttons>
       <button ion-button (click)="hideCard()" id="buttonDash1" class="buttonDashboard">Cleaning</button>
       <button ion-button (click)="hideCard()" id="buttonDash2" class="buttonDashboard">Dry cleaning</button>
       <button ion-button (click)="hideCard()" id="buttonDash3" class="buttonDashboard">Recycling</button>
-      <ion-content padding class="dashboardTab" id="1">
-
-      </ion-content>
     </ion-buttons>
   </ion-content>
 </ion-content>
