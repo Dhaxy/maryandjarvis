@@ -12,9 +12,9 @@ export class HomePage {
 
   }
 
-  public hide: boolean = false;
+  public hide: boolean[];
 
   hideCard() {
-    this.hide = !this.hide;
+    ;
   }
 }

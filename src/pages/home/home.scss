@@ -23,9 +23,9 @@ page-home {
   background: #aea699;
   border: solid #2A2C43;
   border-radius: 15px;
-  margin-top: 50%;
-  height: 60%;
-  width: 100%;
+  margin-top: 40%;
+  height: 290px;
+  width: 380px;
 }
 
 .dashboardTab {
@@ -34,7 +34,14 @@ page-home {
   background: #aea699;
   border: solid #2A2C43;
   border-radius: 15px;
-  height: 186px;
+  height: 165px;
+}
+
+.dashboardText {
+  font-family: Windsong, cursive;
+  font-size: 35px;
+  padding-top: 10px;
+  text-decoration-color: #2A2C43;
 }
 
 .buttonDashboard {
