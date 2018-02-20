@@ -21930,10 +21930,43 @@ page-home #home {
 }
 
 .dashboard {
-  padding: 30px;
+  position: center;
+  background-position: center;
+  padding: 10px;
   background: #aea699;
-  border-spacing: 15px;
   border: solid #2A2C43;
+  border-radius: 15px;
+  margin-top: 40%;
+  height: 290px;
+  width: 380px;
+}
+
+.dashboardTab {
+  position: center;
+  background-position: center;
+  background: #aea699;
+  border: solid #2A2C43;
+  border-radius: 15px;
+  height: 165px;
+}
+
+.dashboardText {
+  font-family: Windsong, cursive;
+  font-size: 35px;
+  padding-top: 10px;
+  -webkit-text-decoration-color: #2A2C43;
+  text-decoration-color: #2A2C43;
+}
+
+.buttonDashboard {
+  position: relative;
+  top: 1px;
+  left: 15px;
+  width: auto;
+  font-size: small;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 page-login #login {
