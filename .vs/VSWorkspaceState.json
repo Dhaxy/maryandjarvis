@@ -3,10 +3,9 @@
     "",
     "\\src",
     "\\src\\pages",
-    "\\src\\pages\\register",
-    "\\src\\pages\\welcome",
+    "\\src\\pages\\home",
     "\\src\\theme"
   ],
-  "SelectedNode": "\\src\\pages\\register\\register.ts",
+  "SelectedNode": "\\src\\pages\\welcome",
   "PreviewInSolutionExplorer": false
 }
