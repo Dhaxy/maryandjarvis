@@ -207,11 +207,11 @@ var map = {
 		7
 	],
 	"../pages/menu/menu.module": [
-		281,
+		280,
 		0
 	],
 	"../pages/miracle/miracle.module": [
-		280,
+		281,
 		6
 	],
 	"../pages/newprofil/newprofil.module": [
@@ -227,11 +227,11 @@ var map = {
 		1
 	],
 	"../pages/register/register.module": [
-		286,
+		285,
 		4
 	],
 	"../pages/welcome/welcome.module": [
-		285,
+		286,
 		3
 	]
 };
@@ -275,16 +275,14 @@ var HomePage = (function () {
         this.app = app;
     }
     HomePage.prototype.hideCard = function () {
-        ;
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"C:\Users\Cassandre\Documents\maryandjarvis\src\pages\home\home.html"*/`<ion-header>\n\n  <ion-navbar>\n\n    <img ion-right src="../../assets/imgs/M_and_J_logo_2_cream.png" class="navbarLogo" />\n\n    <ion-buttons start>\n\n      <button ion-button menuToggle>\n\n        <ion-icon name="menu"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding id="home">\n\n  <div text-center class="dashboardText">Dear Amaury</div>\n\n  <ion-content padding class="dashboard">\n\n    <ion-buttons>\n\n      <button ion-button (click)="hideCard()" id="buttonDash1" class="buttonDashboard">Cleaning</button>\n\n      <button ion-button (click)="hideCard()" id="buttonDash2" class="buttonDashboard">Dry cleaning</button>\n\n      <button ion-button (click)="hideCard()" id="buttonDash3" class="buttonDashboard">Recycling</button>\n\n      <ion-content padding class="dashboardTab" id="1">\n\n\n\n      </ion-content>\n\n    </ion-buttons>\n\n  </ion-content>\n\n</ion-content>\n\n`/*ion-inline-end:"C:\Users\Cassandre\Documents\maryandjarvis\src\pages\home\home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"C:\Users\Cassandre\Documents\maryandjarvis\src\pages\home\home.html"*/`<ion-header>\n\n  <ion-navbar>\n\n    <img ion-right src="../../assets/imgs/M_and_J_logo_2_cream.png" class="navbarLogo" />\n\n    <ion-buttons start>\n\n      <button ion-button menuToggle>\n\n        <ion-icon name="menu"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding id="home">\n\n  <div text-center class="dashboardTextTop">Dear Amaury</div>\n\n  <div>\n\n    <div text class="dashboardTextNextVisit">Next visit is : </div>\n\n    <div text-center class="dashboardTextCalendar">25th March 2049</div>\n\n    <div text-center class="dashboardTextCalendar">at 4 p.m</div>\n\n  </div>\n\n  <ion-content class="dashboard">\n\n   \n\n  </ion-content>\n\n</ion-content>\n\n`/*ion-inline-end:"C:\Users\Cassandre\Documents\maryandjarvis\src\pages\home\home.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* App */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* App */]) === "function" && _b || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* App */]])
     ], HomePage);
     return HomePage;
-    var _a, _b;
 }());
 
 //# sourceMappingURL=home.js.map
@@ -459,13 +457,13 @@ var AppModule = (function () {
                     links: [
                         { loadChildren: '../pages/activity/activity.module#ActivityModule', name: 'Activity', segment: 'activity', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginModule', name: 'Login', segment: 'login', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/miracle/miracle.module#MiracleModule', name: 'Miracle', segment: 'miracle', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/menu/menu.module#MenuPageModule', name: 'MenuPage', segment: 'menu', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/miracle/miracle.module#MiracleModule', name: 'Miracle', segment: 'miracle', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/newprofil/newprofil.module#SignupModule', name: 'Newprofil', segment: 'newprofil', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/parameters/parameters.module#ParametersPageModule', name: 'ParametersPage', segment: 'parameters', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/profile/profile.module#ProfilePageModule', name: 'ProfilePage', segment: 'profile', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/welcome/welcome.module#WelcomeModule', name: 'Welcome', segment: 'welcome', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/register/register.module#RegisterModule', name: 'Register', segment: 'register', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/register/register.module#RegisterModule', name: 'Register', segment: 'register', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/welcome/welcome.module#WelcomeModule', name: 'Welcome', segment: 'welcome', priority: 'low', defaultHistory: [] }
                     ]
                 })
             ],
