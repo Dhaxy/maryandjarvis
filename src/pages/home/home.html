@@ -1,3 +1,5 @@
+<link href="https://fonts.googleapis.com/css?family=Overlock" rel="stylesheet">
+
 <ion-header>
   <ion-navbar>
     <img ion-right src="../../assets/imgs/M_and_J_logo_2_cream.png" class="navbarLogo" />
@@ -12,11 +14,14 @@
 <ion-content padding id="home">
   <div text-center class="dashboardTextTop">Dear Amaury</div>
   <div>
-    <div text class="dashboardTextNextVisit">Next visit is : </div>
-    <div text-center class="dashboardTextCalendar">25th March 2049</div>
-    <div text-center class="dashboardTextCalendar">at 4 p.m</div>
+    <div text-center class="dashboardTextTitles">Next visit</div>
+    <div class="dashboardContent">
+      <div text class="dashboardTextContent" id="dateNextVisit"></div>
+      <div text class="dashboardTextContent" id="hourNextVisit"></div>
+    </div>
+    <div text-center class="dashboardTextTitles">Your Majaar</div>
+    <div class="dashboardContent">
+      <div text-center class="dashboardTextContent" id="majaarName"></div>
+    </div>
   </div>
-  <ion-content class="dashboard">
-   
-  </ion-content>
 </ion-content>
