@@ -1,12 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the ActivityPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { DryTasks } from './Tasks/dry-tasks/dry-tasks';
 
 @IonicPage()
 @Component({
@@ -18,4 +12,7 @@ export class Activity {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
+  dry() {
+    this.navCtrl.push(DryTasks);
+  }
 }
