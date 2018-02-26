@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {NavController, App} from 'ionic-angular';
+import {FirebaseProvider} from "../../providers/firebase/firebase";
 
 
 @Component({
@@ -7,10 +8,15 @@ import {NavController, App} from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
-
-  constructor(public navCtrl: NavController, public app: App) {
+  
+  constructor(public navCtrl: NavController, public app: App, public firebase: FirebaseProvider) {
 
   }
+
+  static addZero(n) {
+    return (n == 0) ? (n + "0") : n;
+  }
+
 
   static addLeading(n) {
     return (n < 10) ? ("0" + n) : n;
@@ -26,16 +32,16 @@ export class HomePage {
       monthNumber + "/" +
       date.getFullYear().toFixed();
 
-    document.getElementById("hourNextVisit").innerHTML = date.getHours().toFixed() + ":" + date.getMinutes().toFixed();
+    document.getElementById("hourNextVisit").innerHTML = date.getHours().toFixed() + ":" + this.addZero(date.getMinutes());
   }
 
-  static getMajaarName() {
-    document.getElementById("majaarName").innerHTML = "Jarvis"
+  static getMaajarName() {
+    document.getElementById("maajarName").innerHTML = "Jarvis"
   }
 
   ionViewDidLoad() {
     HomePage.getDateNextVisit();
-    HomePage.getMajaarName();
+    HomePage.getMaajarName();
   }
 
 }
