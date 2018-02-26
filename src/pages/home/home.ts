@@ -12,16 +12,21 @@ export class HomePage {
 
   }
 
+  static addLeading(n) {
+    return (n < 10) ? ("0" + n) : n;
+  }
+
   static getDateNextVisit() {
     let tmp = new Date();
     let date = new Date(tmp.getTime());
+    let monthNumber = this.addLeading(date.getMonth() + 1);
 
     document.getElementById("dateNextVisit").innerHTML =
       date.getDate().toFixed() + "/" +
-      date.getMonth() + "/" +
-      date.getFullYear();
+      monthNumber + "/" +
+      date.getFullYear().toFixed();
 
-    document.getElementById("hourNextVisit").innerHTML = date.getHours() + ":" + date.getMinutes();
+    document.getElementById("hourNextVisit").innerHTML = date.getHours().toFixed() + ":" + date.getMinutes().toFixed();
   }
 
   static getMajaarName() {
