@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { MailTasksPage } from './mail-tasks';
+import { MailTasks } from './mail-tasks';
 
 @NgModule({
   declarations: [
-    MailTasksPage,
+    MailTasks,
   ],
   imports: [
-    IonicPageModule.forChild(MailTasksPage),
+    IonicPageModule.forChild(MailTasks),
   ],
 })
-export class MailTasksPageModule {}
+export class MailTasksModule {}

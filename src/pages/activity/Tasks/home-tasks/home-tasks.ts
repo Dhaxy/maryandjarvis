@@ -1,25 +1,26 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the HomeTasksPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { FirebaseProvider } from './../../../../providers/firebase/firebase';
+import { FirebaseListObservable } from "angularfire2/database-deprecated";
 
 @IonicPage()
 @Component({
   selector: 'page-home-tasks',
   templateUrl: 'home-tasks.html',
 })
-export class HomeTasksPage {
+export class HomeTasks {
+  homeItems: FirebaseListObservable<any[]>;
+  newItem = '';
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public firebaseProvider: FirebaseProvider) {
+    this.homeItems = this.firebaseProvider.getShoppingItems('/activity/homeItems/');
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad HomeTasksPage');
+  addItem() {
+    this.firebaseProvider.addItem(this.newItem, '/activity/homeItems/');
   }
 
+  removeItem(id) {
+    this.firebaseProvider.removeItem(id, '/activity/homeItems/');
+  }
 }

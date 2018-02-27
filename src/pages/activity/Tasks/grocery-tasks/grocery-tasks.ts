@@ -1,25 +1,27 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the GroceryTasksPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { FirebaseProvider } from './../../../../providers/firebase/firebase';
+import { FirebaseListObservable } from "angularfire2/database-deprecated";
 
 @IonicPage()
 @Component({
   selector: 'page-grocery-tasks',
   templateUrl: 'grocery-tasks.html',
 })
-export class GroceryTasksPage {
+export class GroceryTasks {
+  groceryItems: FirebaseListObservable<any[]>;
+  newItem = '';
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public firebaseProvider: FirebaseProvider) {
+    this.groceryItems = this.firebaseProvider.getShoppingItems('/activity/groceryItems/');
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad GroceryTasksPage');
+  addItem() {
+    this.firebaseProvider.addItem(this.newItem, '/activity/groceryItems/');
+  }
+
+  removeItem(id) {
+    this.firebaseProvider.removeItem(id, '/activity/groceryItems/');
   }
 
 }

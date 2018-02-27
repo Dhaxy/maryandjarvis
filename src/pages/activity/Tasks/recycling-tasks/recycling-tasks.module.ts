@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { RecyclingTasksPage } from './recycling-tasks';
+import { RecyclingTasks } from './recycling-tasks';
 
 @NgModule({
   declarations: [
-    RecyclingTasksPage,
+    RecyclingTasks,
   ],
   imports: [
-    IonicPageModule.forChild(RecyclingTasksPage),
+    IonicPageModule.forChild(RecyclingTasks),
   ],
 })
-export class RecyclingTasksPageModule {}
+export class RecyclingTasksModule {}

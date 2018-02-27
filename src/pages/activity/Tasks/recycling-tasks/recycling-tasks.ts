@@ -1,25 +1,26 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the RecyclingTasksPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { FirebaseProvider } from './../../../../providers/firebase/firebase';
+import { FirebaseListObservable } from "angularfire2/database-deprecated";
 
 @IonicPage()
 @Component({
   selector: 'page-recycling-tasks',
   templateUrl: 'recycling-tasks.html',
 })
-export class RecyclingTasksPage {
+export class RecyclingTasks {
+  recyclingItems: FirebaseListObservable<any[]>;
+  newItem = '';
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public firebaseProvider: FirebaseProvider) {
+    this.recyclingItems = this.firebaseProvider.getShoppingItems('/activity/recyclingItems/');
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad RecyclingTasksPage');
+  addItem() {
+    this.firebaseProvider.addItem(this.newItem, '/activity/recyclingItems/');
   }
 
+  removeItem(id) {
+    this.firebaseProvider.removeItem(id, '/activity/recyclingItems/');
+  }
 }

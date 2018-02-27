@@ -1,25 +1,26 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the MailTasksPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { FirebaseProvider } from './../../../../providers/firebase/firebase';
+import { FirebaseListObservable } from "angularfire2/database-deprecated";
 
 @IonicPage()
 @Component({
   selector: 'page-mail-tasks',
   templateUrl: 'mail-tasks.html',
 })
-export class MailTasksPage {
+export class MailTasks {
+  mailItems: FirebaseListObservable<any[]>;
+  newItem = '';
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public firebaseProvider: FirebaseProvider) {
+    this.mailItems = this.firebaseProvider.getShoppingItems('/activity/mailItems/');
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad MailTasksPage');
+  addItem() {
+    this.firebaseProvider.addItem(this.newItem, '/activity/mailItems/');
   }
 
+  removeItem(id) {
+    this.firebaseProvider.removeItem(id, '/activity/mailItems/');
+  }
 }

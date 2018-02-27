@@ -1,25 +1,26 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the LaundryTasksPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { FirebaseProvider } from './../../../../providers/firebase/firebase';
+import { FirebaseListObservable } from "angularfire2/database-deprecated";
 
 @IonicPage()
 @Component({
   selector: 'page-laundry-tasks',
   templateUrl: 'laundry-tasks.html',
 })
-export class LaundryTasksPage {
+export class LaundryTasks {
+  laundryItems: FirebaseListObservable<any[]>;
+  newItem = '';
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public firebaseProvider: FirebaseProvider) {
+    this.laundryItems = this.firebaseProvider.getShoppingItems('/activity/laundryItems/');
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad LaundryTasksPage');
+  addItem() {
+    this.firebaseProvider.addItem(this.newItem, '/activity/laundryItems/');
   }
 
+  removeItem(id) {
+    this.firebaseProvider.removeItem(id, '/activity/laundryItems/');
+  }
 }

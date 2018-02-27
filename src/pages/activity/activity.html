@@ -10,34 +10,45 @@
 </ion-header>
 
 <ion-content padding id="activity" class="card-background-page">
+  <button ion-button block color="main" (click)="dry()">
+    <ion-card>
+      <img src="../../assets/icon/Dry_Cleaning.jpg" />
+    </ion-card>
+  </button>
 
-  <button ion-button block color="main" (click)="dry()">Dry</button>
-
-  <ion-card>
-    <img src="../../assets/icon/Dry_Cleaning.jpg" />
-  </ion-card>
-
+  <button ion-button block color="main" (click)="grocery()">
   <ion-card>
     <img src="../../assets/icon/Grocery_Shopping.jpg" />
   </ion-card>
+  </button>
 
+  <button ion-button block color="main" (click)="home()">
   <ion-card>
     <img src="../../assets/icon/Home_Cleaning.jpg" />
   </ion-card>
+  </button>
 
+  <button ion-button block color="main" (click)="laundry()">
   <ion-card>
     <img src="../../assets/icon/Laundry_Ironing.jpg" />
   </ion-card>
+  </button>
 
+  <button ion-button block color="main" (click)="mail()">
   <ion-card>
     <img src="../../assets/icon/Mail_Management.jpg" />
   </ion-card>
+  </button>
 
+  <button ion-button block color="main" (click)="recycling()">
   <ion-card>
     <img src="../../assets/icon/Recycling_Management.jpg" />
   </ion-card>
+  </button>
 
+  <button ion-button block color="main" (click)="shoes()">
   <ion-card>
     <img src="../../assets/icon/Shoes_Care.jpg" />
   </ion-card>
+  </button>
 </ion-content>
