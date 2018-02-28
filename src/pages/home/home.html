@@ -12,7 +12,7 @@
 </ion-header>
 
 <ion-content padding id="home">
-  <div text-center class="dashboardTextTop">Dear Amaury</div>
+  <div text-center class="dashboardTextTop">Dear <span id="userName"></span></div>
   <div>
     <div text-center class="dashboardTextTitleVisit">Next visit</div>
     <div text-center class="dashboardTextTitleMaajar">Your Maajar</div>
@@ -24,9 +24,20 @@
       <div text-center class="dashboardTextContent" id="maajarName"></div>
     </div>
     <div>
-      <button ion-button id="yourActivitiesButton" class="dashboardButtons">
+      <button ion-button id="yourActivitiesButton" class="dashboardButtons" (click)="hideMenu()">
         <div text-center class="dashboardButtonsText">Check your activities</div>
       </button>
+      <ion-list *ngIf="hide">
+        <ion-item class="dropdownButtons">
+          List Item 1
+        </ion-item>
+        <ion-item class="dropdownButtons">
+          List Item 2
+        </ion-item>
+        <ion-item class="dropdownButtons">
+          List Item 3
+        </ion-item>
+      </ion-list>
       <button ion-button id="setNewDateButton" class="dashboardButtons">
         <div text-center class="dashboardButtonsText">Change date</div>
       </button>

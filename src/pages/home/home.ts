@@ -8,15 +8,16 @@ import {FirebaseProvider} from "../../providers/firebase/firebase";
   templateUrl: 'home.html'
 })
 export class HomePage {
-  
+
   constructor(public navCtrl: NavController, public app: App, public firebase: FirebaseProvider) {
 
   }
 
-  static addZero(n) {
-    return (n == 0) ? (n + "0") : n;
-  }
+  public hide: boolean = false;
 
+  hideMenu() {
+    this.hide = !this.hide;
+  }
 
   static addLeading(n) {
     return (n < 10) ? ("0" + n) : n;
@@ -32,7 +33,11 @@ export class HomePage {
       monthNumber + "/" +
       date.getFullYear().toFixed();
 
-    document.getElementById("hourNextVisit").innerHTML = date.getHours().toFixed() + ":" + this.addZero(date.getMinutes());
+    document.getElementById("hourNextVisit").innerHTML = date.getHours().toFixed() + ":" + this.addLeading(date.getMinutes());
+  }
+
+  static getUserName() {
+    document.getElementById("userName").innerHTML = "Mary";
   }
 
   static getMaajarName() {
@@ -42,6 +47,7 @@ export class HomePage {
   ionViewDidLoad() {
     HomePage.getDateNextVisit();
     HomePage.getMaajarName();
+    HomePage.getUserName();
   }
 
 }

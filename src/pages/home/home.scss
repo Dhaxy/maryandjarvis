@@ -97,6 +97,15 @@ page-home {
   margin: 0.5vh;
 }
 
+.dropdownButtons {
+  background: none;
+  text-align: center;
+  border: solid #2A2C43;
+  border-radius: 1.5vh;
+  width: 100%;
+  margin: 0.5vh;
+}
+
 ::-webkit-scrollbar,
 *::-webkit-scrollbar {
   display: none !important;
