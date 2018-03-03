@@ -3,9 +3,10 @@
     "",
     "\\src",
     "\\src\\pages",
-    "\\src\\pages\\home",
+    "\\src\\pages\\activity",
+    "\\src\\pages\\activity\\Tasks",
     "\\src\\theme"
   ],
-  "SelectedNode": "\\src\\pages\\welcome",
+  "SelectedNode": "\\src\\pages\\activity\\activity.html",
   "PreviewInSolutionExplorer": false
 }

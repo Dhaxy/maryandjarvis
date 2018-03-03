@@ -21902,6 +21902,16 @@ page-activity #activity {
   padding: 10px 10px;
 }
 
+.card-background-page button {
+  background: #10253F;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 12%;
+  position: center;
+}
+
 .card-background-page ion-card {
   position: relative;
   margin-top: 10px;
@@ -22041,7 +22051,7 @@ page-home #home {
   padding: 10px 10px;
 }
 
-.dashboardContent {
+.dashboardContentNextVisit {
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -22049,7 +22059,7 @@ page-home #home {
   border: solid #2A2C43;
   border-radius: 15px;
   padding: 2vh;
-  margin-bottom: 5.5vh;
+  margin-bottom: 3vh;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -22057,32 +22067,107 @@ page-home #home {
   width: -moz-fit-content;
   width: fit-content;
   overflow: hidden;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.dashboardContentMaajar {
+  position: absolute;
+  margin-left: 4.5vh;
+  margin-right: auto;
+  background: #aea699;
+  border: solid #2A2C43;
+  border-radius: 15px;
+  padding: 2vh;
+  margin-bottom: 3vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  overflow: hidden;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .dashboardTextTop {
-  font-family: Windsong, cursive;
-  font-size: 8vh;
+  font-family: Overlock, cursive;
+  font-size: 6vh;
   padding-top: 1vh;
+  margin-bottom: 2vh;
 }
 
-.dashboardTextTitles {
+.dashboardTextTitleVisit {
+  position: absolute;
   font-family: Overlock, serif;
   margin-top: 0.2vh;
-  margin-bottom: 1.5vh;
-  font-size: 6vh;
+  margin-bottom: 1vh;
+  margin-left: 9vh;
+  font-size: 3.5vh;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.dashboardTextTitleMaajar {
+  font-family: Overlock, serif;
+  margin-top: 0.2vh;
+  margin-bottom: 1vh;
+  margin-left: 34.8vh;
+  font-size: 3.5vh;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .dashboardTextContent {
   font-family: Overlock, serif;
+  color: #000000;
   font-size: 3.5vh;
   line-height: 3.5vh;
   text-align: center;
   margin: 0.5vh;
 }
 
+.dashboardButtons {
+  background-color: #2A2C43;
+  margin-top: 1vh;
+  border-radius: 1.5vh;
+  width: 100%;
+}
+
+.dashboardButtonsText {
+  font-family: Overlock, serif;
+  color: #aea699;
+  font-size: 3.5vh;
+  line-height: 3.5vh;
+  text-align: center;
+  margin: 0.5vh;
+}
+
+.dropdownButtons {
+  background: none;
+  text-align: center;
+  border: solid #2A2C43;
+  border-radius: 1.5vh;
+  width: 100%;
+  margin: 0.5vh;
+}
+
 ::-webkit-scrollbar,
 *::-webkit-scrollbar {
-  display: none;
+  display: none !important;
+}
+
+.scroll-content {
+  overflow-y: hidden !important;
 }
 
 page-login #login {
