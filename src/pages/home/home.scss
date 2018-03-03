@@ -67,7 +67,7 @@ page-home {
   font-family: Overlock, serif;
   margin-top: 0.2vh;
   margin-bottom: 1vh;
-  margin-left: 34.8vh;
+  margin-left: 33vh;
   font-size: 3.5vh;
   display: inline-flex;
 }
@@ -112,5 +112,5 @@ page-home {
 }
 
 .scroll-content {
-  overflow-y: hidden !important;
+  overflow-y: auto !important;
 }

@@ -28,15 +28,11 @@
         <div text-center class="dashboardButtonsText">Check your activities</div>
       </button>
       <ion-list *ngIf="hide">
-        <ion-item class="dropdownButtons">
-          List Item 1
-        </ion-item>
-        <ion-item class="dropdownButtons">
-          List Item 2
-        </ion-item>
-        <ion-item class="dropdownButtons">
-          List Item 3
-        </ion-item>
+        <ion-item-sliding *ngFor="let items of allItems | async" class="dropdownButtons">
+          <ion-item *ngFor="let children of items.children">
+            {{ children.$value }}
+          </ion-item>
+        </ion-item-sliding>
       </ion-list>
       <button ion-button id="setNewDateButton" class="dashboardButtons">
         <div text-center class="dashboardButtonsText">Change date</div>

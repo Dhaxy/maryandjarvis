@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {NavController, App} from 'ionic-angular';
 import {FirebaseProvider} from "../../providers/firebase/firebase";
+import {FirebaseListObservable} from "angularfire2/database-deprecated";
 
 
 @Component({
@@ -9,8 +10,10 @@ import {FirebaseProvider} from "../../providers/firebase/firebase";
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController, public app: App, public firebase: FirebaseProvider) {
+  allItems: FirebaseListObservable<any[]>;
 
+  constructor(public navCtrl: NavController, public app: App, public firebase: FirebaseProvider) {
+    this.allItems = this.firebase.getShoppingItems('/activity/');
   }
 
   public hide: boolean = false;
