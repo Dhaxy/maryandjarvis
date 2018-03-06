@@ -13,4 +13,4 @@ import { Newprofil } from './newprofil';
     Newprofil
   ]
 })
-export class SignupModule {}
+export class NewprofilModule {}

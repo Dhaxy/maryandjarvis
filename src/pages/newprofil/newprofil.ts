@@ -17,10 +17,6 @@ export class Newprofil {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad Newprofil');
-  }
-
   skip() {
     this.navCtrl.setRoot('MenuPage');
   }

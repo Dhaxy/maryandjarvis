@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import {IonicPage, NavController, NavParams} from 'ionic-angular';
 import { Welcome } from '../welcome/welcome';
+import { User } from "../user";
+import { AngularFireAuth } from 'angularfire2/auth';
 
 @IonicPage()
 @Component({
@@ -9,15 +11,22 @@ import { Welcome } from '../welcome/welcome';
 })
 export class Login {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  user = {} as User;
+
+  constructor(private afAuth: AngularFireAuth,
+    public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad Login');
-  }
-
-  login(){
-    this.navCtrl.setRoot('MenuPage');
+  async login(user: User) {
+    try {
+      const result = await this.afAuth.auth.signInWithEmailAndPassword(user.email, user.password);
+      if (result) {
+        this.navCtrl.setRoot('MenuPage');
+      }
+    }
+    catch (e) {
+      console.error(e);
+    }
   }
 
   back() {

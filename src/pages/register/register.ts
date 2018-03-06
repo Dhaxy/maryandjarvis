@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Welcome } from '../welcome/welcome';
+import { Newprofil } from '../newprofil/newprofil';
+import { User } from "../user";
+import { AngularFireAuth } from 'angularfire2/auth';
 
 @IonicPage()
 @Component({
@@ -9,14 +12,24 @@ import { Welcome } from '../welcome/welcome';
 })
 export class Register {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  user = {} as User;
+
+  constructor(private afAuth: AngularFireAuth,
+    public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad Register');
-  }
-
-  next() {
+  async next(user: User) {
+    try {
+      const result = await this.afAuth.auth.createUserWithEmailAndPassword(
+        user.email,
+        user.password
+      );
+      if (result) {
+        this.navCtrl.setRoot(Newprofil);
+      }
+    } catch (e) {
+      console.error(e);
+    }
   }
 
   back() {

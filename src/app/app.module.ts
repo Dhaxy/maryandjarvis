@@ -24,6 +24,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { AngularFireDatabaseModule } from "angularfire2/database-deprecated";
 import { AngularFireModule } from 'angularfire2';
 import { FirebaseProvider } from './../providers/firebase/firebase';
+import { AngularFireAuthModule } from 'angularfire2/auth';
 
 const firebaseConfig = {
   apiKey: "AIzaSyAnS2ElF5x2Fo-Z_KIe0avWhktzSR-ElHY",
@@ -58,6 +59,7 @@ NgModule({
   imports: [
     BrowserModule,
     AngularFireDatabaseModule,
+    AngularFireAuthModule,
     AngularFireModule.initializeApp(firebaseConfig),
     IonicModule.forRoot(MyApp)
   ],

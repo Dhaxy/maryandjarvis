@@ -5,8 +5,10 @@
     "\\src\\pages",
     "\\src\\pages\\activity",
     "\\src\\pages\\activity\\Tasks",
+    "\\src\\pages\\activity\\Tasks\\dry-tasks",
+    "\\src\\pages\\welcome",
     "\\src\\theme"
   ],
-  "SelectedNode": "\\src\\pages\\activity\\activity.html",
+  "SelectedNode": "\\src\\pages\\activity\\Tasks\\dry-tasks\\dry-tasks.ts",
   "PreviewInSolutionExplorer": false
 }

@@ -6,17 +6,17 @@
     <ion-list id="login-list">
 
       <ion-item>
-        <ion-label fixed>Username</ion-label>
-        <ion-input type="text" value=""></ion-input>
+        <ion-label fixed>Email</ion-label>
+        <ion-input type="text" [(ngModel)]="user.email"></ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label fixed>Password</ion-label>
-        <ion-input type="password" value=""></ion-input>
+        <ion-input type="password" [(ngModel)]="user.password"></ion-input>
       </ion-item>
     </ion-list>
 
-    <button ion-button block color="main" (click)="next()">Next</button>
+    <button ion-button block color="main" (click)="next(user)">Next</button>
     <button ion-button block color="main" (click)="back()">Back</button>
   </section>
 </ion-content>

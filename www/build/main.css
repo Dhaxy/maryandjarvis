@@ -22119,7 +22119,7 @@ page-home #home {
   font-family: Overlock, serif;
   margin-top: 0.2vh;
   margin-bottom: 1vh;
-  margin-left: 34.8vh;
+  margin-left: 33vh;
   font-size: 3.5vh;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -22167,7 +22167,7 @@ page-home #home {
 }
 
 .scroll-content {
-  overflow-y: hidden !important;
+  overflow-y: auto !important;
 }
 
 page-login #login {
