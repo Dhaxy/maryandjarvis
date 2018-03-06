@@ -33,7 +33,7 @@ page-home {
 
 .dashboardContentMaajar{
   position: absolute;
-  margin-left: 4.5vh;
+  margin-left: 2.8vh;
   margin-right: auto;
   background: #aea699;
   border: solid #2A2C43;
@@ -59,7 +59,7 @@ page-home {
   margin-top: 0.2vh;
   margin-bottom: 1vh;
   margin-left: 9vh;
-  font-size: 3.5vh;
+  font-size: 3vh;
   display: inline-flex;
 }
 
@@ -67,8 +67,8 @@ page-home {
   font-family: Overlock, serif;
   margin-top: 0.2vh;
   margin-bottom: 1vh;
-  margin-left: 33vh;
-  font-size: 3.5vh;
+  margin-left: 34vh;
+  font-size: 3vh;
   display: inline-flex;
 }
 
@@ -98,12 +98,15 @@ page-home {
 }
 
 .dropdownButtons {
-  background: none;
+  background: #aea699;
   text-align: center;
   border: solid #2A2C43;
   border-radius: 1.5vh;
   width: 100%;
+  height: 5vh;
   margin: 0.5vh;
+  font-size: 0.5vh;
+
 }
 
 ::-webkit-scrollbar,

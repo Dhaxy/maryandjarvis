@@ -29,7 +29,7 @@
       </button>
       <ion-list *ngIf="hide">
         <ion-item-sliding *ngFor="let items of allItems | async" class="dropdownButtons">
-          <ion-item *ngFor="let children of items.children">
+          <ion-item *ngFor="let children of items.children" class="dropdownButtons">
             {{ children.$value }}
           </ion-item>
         </ion-item-sliding>

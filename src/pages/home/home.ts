@@ -32,7 +32,7 @@ export class HomePage {
     let monthNumber = this.addLeading(date.getMonth() + 1);
 
     document.getElementById("dateNextVisit").innerHTML =
-      date.getDate().toFixed() + "/" +
+      this.addLeading(date.getDate().toFixed()) + "/" +
       monthNumber + "/" +
       date.getFullYear().toFixed();
 
